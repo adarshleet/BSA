@@ -1,0 +1,301 @@
+body{
+    background-color: #f3f3e6 !important;
+    font-family: Source Sans Pro,arial !important;
+}
+
+ul{
+    padding: 0 !important;
+    margin: 0;
+    list-style: none;
+}
+
+a{
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+/* social media and go-up css */
+
+.social-media{
+    position: fixed;
+    right: 0;
+    top: 35%;
+}
+
+.icon{
+    background-color: #000;
+    width: 2.5rem;
+    font-size: 1.25rem;
+    padding: 0.2rem;
+    transition: border-right .25s ease-in-out;
+}
+
+.icon:hover {
+    border-right: 1rem solid #000;
+}
+
+.go-up{
+    position: fixed;
+    bottom: 0;
+    right: 4.5rem;
+    width: 3rem;
+    height: 2.25rem;
+    background-color: #000;
+    transition: all .25s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.go-up:hover{
+    background-color: #f26f21;
+}
+
+.go-up.active{
+    opacity: .8;
+    pointer-events: auto;
+}
+
+/* social media and go-up css end*/
+
+/* header css */
+
+header{
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: rgb(243, 243, 230,.9);
+    padding: 0 13.5rem;
+}
+
+.nav-links{
+    text-transform: uppercase;
+    color: rgb(51, 51, 51);
+    font-size: 1rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.nav-item:hover{
+    border-top: .15rem solid #f26f21;
+    height: 3.85rem;
+}
+
+.nav-item:hover .nav-links{
+    color: #f26f21;
+}
+
+.navbar{
+    padding: 0 !important;
+}
+
+.navbar-toggler{
+    position: absolute;
+    right: 10px;
+    top: -50px;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.logo{
+    height: 4rem;
+    padding: 0.7rem 0;
+}
+
+.logo img{
+    height: 100%;
+}
+
+.nav-item{
+    display: flex;
+    height: 4rem;
+    margin-right: 3rem;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 60px;
+    background-color: rgb(243, 243, 230);
+    font-size: .9rem;
+    white-space: nowrap;
+    line-height: 35px;
+}
+
+.sub-menu a{
+    padding-right: 35px;
+    padding-left: 20px;
+}
+
+.menu-item{
+    border: .5px solid rgb(240, 233, 233);
+}
+
+.menu-item:hover{
+    background-color: #ebe3dd;
+}
+
+.nav-item:hover{
+    overflow: visible;
+}
+
+.nav-item:hover .sub-menu{
+    border-top: 3px solid #f26f21;
+}
+
+/* header css end*/
+
+/* main bg css */
+
+.main-bg img{
+    width: 100%;
+    padding-top: 4rem;
+}
+
+/* main bg css end */
+
+/* freedom css */
+
+.freedom-fun{
+    padding: 4.6rem 1.2rem;
+    color: #f26f21;
+}
+
+.freedom-fun h2{
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 1.8rem;
+}
+
+.freedom-fun h4{
+    font-size: 1.25rem;
+    font-weight: 300;
+    line-height: 1.7rem;
+}
+/* freedom css end */
+
+/* The bsa bikes css */
+
+.lines{
+    width: 100%;
+    border-top: .05rem solid #f26f21;
+}
+
+.diff-bikes{
+    column-gap: 1.5rem;
+}
+
+.bike-head{
+    white-space: nowrap;
+    font-size: 3rem;
+    color: #f26f21;
+    font-weight: 300;
+}
+
+.bike-name h4{
+    color: #f26f21;
+    font-weight: 300;
+    font-size: 1.25rem;
+}
+
+.bike-img img{
+    transition: transform .7s ease-in-out;
+}
+
+.bike-img img:hover{
+    transform: scale(1.1);
+}
+
+.bike-description{
+    text-align: justify;
+    color: #747474;
+}
+
+.bikes{
+    width: 32.5rem !important;
+}
+
+.bike-btn{
+    background-color: #f26f21;
+    border: none;
+    border-radius: 0.2rem;
+    color: #fff;
+    font-weight: 400;
+    padding: 10px 22px;
+    font-size: 14px;
+}
+
+.bike-btn:hover{
+    background-color: #000;
+}
+
+/* The bsa bikes css end */
+
+/* footer css */
+
+footer{
+    background-color: #f26f21;
+    font-size: 0.75rem;
+}
+
+footer a{
+    color: #000;
+    text-decoration: none;
+}
+
+footer a:hover{
+    color: #000;
+}
+
+.Copyright{
+    color: #fff;
+}
+
+/* footer css end */
+
+@media only screen and (max-width: 768px){
+    header{
+        padding: 0 1rem;
+    }
+
+    .freedom-fun h2{
+        font-size: 2rem;
+    }
+
+    .bike-head{
+        font-size: 2.3rem;
+    }
+
+    header{
+        display: block !important;
+        position: static;
+        background-color: #fff;
+        padding: 0;
+    }
+
+    .navbar{
+        background-color: #fff;
+    }
+
+    .nav-item {
+        height: 2.2rem;
+        border-top: .5px solid rgb(240, 233, 233);
+        padding-left: 30px;
+        margin-right: 0;
+        pointer-events: none;
+    }
+
+    .nav-links{
+        font-size: .75rem;
+    }
+
+    .logo{
+        padding-left: 30px;
+    }
+
+    .main-bg img{
+        padding: 0;
+    }
+}
